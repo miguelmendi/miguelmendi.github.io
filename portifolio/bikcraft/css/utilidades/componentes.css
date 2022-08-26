@@ -7,6 +7,12 @@
   margin-right: auto;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .botao {
   padding: 16px 32px;
   display: inline-block;
