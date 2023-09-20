@@ -192,6 +192,9 @@ body {
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .sub-title {
@@ -204,14 +207,14 @@ body {
   color: #0ef;
 }
 
-.conainer {
+.container {
   padding: 90px;
 }
 
 .services-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-  grid-gap: 40px;
+  display: flex;
+  grid-template-columns: repeat(auto-fit,minmax(259px, 1fr));
+  grid-gap: 60px;
   margin-top: 50px;
 }
 
