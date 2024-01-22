@@ -154,6 +154,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
+  padding: 70px 10%;
 }
 
 .about-img img {
@@ -163,6 +164,8 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+
+
 
 .about-text h2 {
   font-size: 60px;
@@ -543,6 +546,7 @@ section {
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
+  max-width: 350px;
 }
 
 .row img {
