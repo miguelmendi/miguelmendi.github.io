@@ -155,7 +155,7 @@ body {
   align-items: center;
   gap: 1.5rem;
   padding: 70px 10%;
-  
+
 }
 
 .about-img img {
@@ -216,7 +216,7 @@ body {
 }
 
 .services-list {
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(auto-fit,minmax(259px, 1fr));
   grid-gap: 60px;
   margin-top: 50px;
@@ -539,7 +539,26 @@ section {
 
 .portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+@media (max-width:600px) {
+  .header {
+    padding: 10px 5%;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .navbar a {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  .portfolio-content {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .row {
@@ -547,14 +566,17 @@ section {
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
-  max-width: 350px;
+  max-width: 200px;
+  height: 250px;
 }
 
 .row img {
   width: 100%;
+  max-width: 350px;
   border-radius: 8px;
   display: block;
   transition: transform 0.5s;
+  height: 100%;
 }
 
 .layer {
