@@ -546,14 +546,25 @@ section {
 
 @media (max-width:600px) {
   .header {
-    padding: 10px 5%;
+    padding: 5px 5%;
   }
   .logo {
-    font-size: 20px;
+    font-size: 16px;
   }
   .navbar a {
-    font-size: 18px;
+    font-size: 12px;
     margin-left: 5px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+  .radial-bars {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .portfolio-content {
@@ -634,11 +645,18 @@ section {
 
 .contact {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat( 1fr);
   align-items: center;
   gap: 3rem;
   padding-left: 30px;
   margin-top: 130px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-text h2 {
@@ -666,7 +684,7 @@ section {
 }
 
 .contact-list {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .contact-list li {
@@ -677,6 +695,10 @@ section {
 .contact-list li {
   margin-bottom: 10px;
   display: block;
+}
+
+.contact-list li i {
+  margin-right: 7px;
 }
 
 .contact-list i {
